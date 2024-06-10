@@ -27,7 +27,7 @@ gobuster dir -u  <url> -w <字典> -b <状态码黑名单> -t <线程数> -x php
 
 ## nmap1 - tcp探活扫描
 ```
-nmap -sT --min-rate 10000 -p0- <ip> -oA nmapscan/ports ;ports=$(grep open ./nmapscan/ports.nmap | awk -F '/' '{print $1}' | paste -sd ',');echo $ports >> nmapscan/tcp_ports;
+nmap -sT -p0- <ip> -oA nmapscan/ports ;ports=$(grep open ./nmapscan/ports.nmap | awk -F '/' '{print $1}' | paste -sd ',');echo $ports >> nmapscan/tcp_ports;
 ```
 
 ## nmap3 - tcp细扫

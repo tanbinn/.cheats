@@ -13,5 +13,5 @@ feroxbuster -u <url> -H <head> -t <threads_num> -w <dic>  --insecure -C <Status_
 线程数，打靶场建议20以下，实战根据实际情况
 -C <想要的状态码>
 ```bash
-feroxbuster -u <url> -t <threads_num> -w <dic>  -C <Status_Code>  -d <depth>
+feroxbuster -u <url> -t <threads_num> -w <dic> -d <depth> -x php,zip,bak,jpg,png,mp4,mkv,txt,html,md,git,7z,rar,db,log,docx,xlsx
 ```
